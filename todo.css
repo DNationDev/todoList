@@ -1,0 +1,63 @@
+::after,
+::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 50%;
+}
+
+header {
+    text-align: center;
+    margin: 30px;
+}
+
+.todos-container {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list-todos {
+    border: 1px solid black;
+    line-height: 2rem;
+    border-radius: 5px;
+}
+
+.task-container {
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+
+}
+
+.task-header {
+    border: 0px solid transparent;
+    margin: 10px;
+    font-size: 25px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.task-content {
+    margin: 10px;
+    padding: 5px;
+    line-height: 2rem;
+}
+
+.active-bold {
+    font-weight: bold;
+}

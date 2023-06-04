@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="todo.css" />
+
+    <script defer src="todo.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>What Todo</h1>
+    </header>
+
+    <div class="container">
+      <div class="todos-container">
+        <h2>List of things to do</h2>
+
+        <form action="" class="todo-form" data-todo-form>
+          <input class="input-todos" type="text" placeholder="todo" />
+          <button class="add-todos" type="submit">+</button>
+        </form>
+        <div class="list-todos"></div>
+
+        <button class="clear-todos" type="button">Clear Todos</button>
+      </div>
+
+      <div class="task-container">
+        <div class="task-card">
+          <div class="task-header">
+            <h3 class="task-title">Tasks</h3>
+          </div>
+          <div class="task-content">
+            <fieldset>
+              <legend>task remaining: <span class="task-count"></span></legend>
+
+              <form action="" class="task-form" data-task-form>
+                <input class="input-tasks" type="text" placeholder="task" />
+                <button class="add-tasks" type="submit">+</button>
+              </form>
+              <div class="task-element"></div>
+            </fieldset>
+          </div>
+          <button class="clear-tasks" type="button">Clear task</button>
+        </div>
+      </div>
+    </div>
+    <template id="task-template">
+      <div>
+        <input type="checkbox" />
+        <label></label>
+      </div>
+    </template>
+  </body>
+</html>
